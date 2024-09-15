@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozisyonlama 2</title>
+    <style>
+        .kutu {
+            background-color: pink;
+            height: 100px;
+            width: 100px;
+            position: relative;
+        }
+
+        .poke {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        /* mutlak pozisyonlama yapılan bir elementin konumu normalde tarayıcının görünen kısmına göre yapılır ancak parent elementinde position relative varsa onun sınırları dahilinde konumlama yapılır. */
+        .uzun {
+            position: relative;
+        }
+
+        .agac {
+            position: absolute;
+            left: calc(50% - 50px);
+            top: calc(50% - 50px);
+            z-index: -1;
+            opacity: .5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Başlık</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus totam incidunt doloribus, sunt et voluptate
+        culpa, repellendus consequatur unde ab, consectetur blanditiis dolore corrupti officia possimus voluptates rem
+        laborum.</p>
+    <div class="kutu">
+        <img src="pikachu.png" alt="Pokemon" class="poke">
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum reprehenderit dicta dignissimos, eos minus
+        corporis amet ullam maxime quae ab voluptatibus. Qui laudantium commodi doloremque ab atque cumque id nostrum?
+    </p>
+    <p>Possimus nemo voluptatem, sint cupiditate commodi laborum quo? Beatae suscipit aut quia. In tempore nisi, quam
+        dolorum sunt dolore sit possimus cum quaerat minus facere neque doloribus quae, dolores eaque?</p>
+    <p>At impedit dolore cupiditate natus, sequi temporibus modi tempora quo asperiores dolorem voluptas sit quia
+        consectetur consequatur delectus nam in omnis earum eaque, facilis aut. Aliquid accusantium facilis consequuntur
+        odit.</p>
+    <p class="uzun">
+        <img class="agac" src="palmiye.png" alt="Agac" height="100">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Perspiciatis, consectetur? Ut alias, adipisci, corrupti cum excepturi laborum aperiam quasi quod
+        accusantium, repellendus consectetur sit! Alias vel veniam necessitatibus unde iste. Sunt distinctio magni
+        mollitia facere earum voluptatum sed qui atque! Itaque quia deleniti, dolorum, numquam quo molestiae maiores
+        delectus dolore, quam soluta inventore natus sint assumenda asperiores consequatur! Sapiente facilis tempore
+        delectus odio enim aperiam omnis placeat obcaecati aut. Vel minus magnam aspernatur aliquid voluptas corrupti
+        enim commodi autem sint illo consectetur possimus quis quidem, nulla quaerat quisquam. Culpa eligendi, corporis
+        odit ullam est iusto assumenda reprehenderit quam voluptatem corrupti maiores ex harum ea eaque dolorum
+        veritatis et. Tempora repudiandae in accusamus earum eos corporis, quaerat quia totam deserunt ab impedit
+        architecto sit nesciunt commodi suscipit porro doloribus ipsa quos fugit, consequatur voluptate placeat.
+        Repellendus quas minus, dolorum voluptates temporibus quisquam? Fuga voluptates voluptatem in quidem dicta alias
+        cupiditate itaque?
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum reprehenderit dicta dignissimos, eos minus
+        corporis amet ullam maxime quae ab voluptatibus. Qui laudantium commodi doloremque ab atque cumque id nostrum?
+    </p>
+    <p>Possimus nemo voluptatem, sint cupiditate commodi laborum quo? Beatae suscipit aut quia. In tempore nisi, quam
+        dolorum sunt dolore sit possimus cum quaerat minus facere neque doloribus quae, dolores eaque?</p>
+    <p>At impedit dolore cupiditate natus, sequi temporibus modi tempora quo asperiores dolorem voluptas sit quia
+        consectetur consequatur delectus nam in omnis earum eaque, facilis aut. Aliquid accusantium facilis consequuntur
+        odit.</p>
+
+</body>
+
+</html>
